@@ -1,0 +1,26 @@
+---
+interface Props {
+  linkText: string;
+  imageOne:string;
+  imageTwo:string;
+}
+const { linkText, imageOne, imageTwo } = Astro.props;
+---
+
+<section class="py-12">
+  <div class="grid grid-cols-2 p-4">
+    <div>
+      <h1 class="text-white text-5xl italic max-w-xs yellowText pb-8">About Our Fit Family</h1>
+      <p class="text-white max-w-sm">
+        Astraeus was founded in 2001 by a husband and wife team, Bobby and Dora Graff. Since then, we have expanded to over 115 locations nationwide!
+      </p>
+      <p class="text-white mt-8 underline">
+        <a href={linkText}>Learn more</a>
+      </p>
+    </div>
+    <div class="grid grid-cols-2">
+        <img src={'/images/'+imageOne} alt="Gym Instructor" class="rounded-md object-cover w-48"/>
+        <img src={'/images/'+imageTwo} alt="Boxing Instructor" class="rounded-md object-cover w-48 pt-8"/>
+    </div>
+  </div>
+</section>

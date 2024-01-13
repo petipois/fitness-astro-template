@@ -1,0 +1,20 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Hero from '../components/Hero.astro';
+import About from '../components/About.astro';
+import Offers from '../components/Offers.astro';
+import Testimonials from '../components/Testimonials.astro';
+import HeroFooter from '../components/HeroFooter.astro';
+---
+
+<Layout title="Astraeus Gym">
+	<main>
+		<!-- Add Call To action, company Name and Button text2 -->
+	<Hero callToAction='Be Your Best', buttonText='Join Today' companyName='Astraeus Gym'/>
+	<About linkText="/" imageOne='gym-instructor.jpg', imageTwo='gym-femaleinstructor.jpg' />
+	<Offers />
+	<Testimonials />
+	<HeroFooter callToAction='Get in Touch Today' />
+	</main>
+</Layout>
+

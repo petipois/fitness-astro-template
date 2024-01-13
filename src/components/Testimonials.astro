@@ -1,0 +1,44 @@
+---
+const testimonials = [
+  {
+    profileURL: "gym-femaleinstructor.jpg",
+    author: "Donna Bleaker",
+    age: 31,
+    quote:
+      "Testimonials are short quotes from people who love your brand. It's a great way to convince customers to try your services. ",
+  },
+  {
+    profileURL: "gym-ropes.jpg",
+    author: "Lauren Cross",
+    age: 28,
+    quote:
+      "Testimonials are short quotes from people who love your brand. It's a great way to convince customers to try your services. ",
+  },
+  {
+    profileURL: "gym-instructor.jpg",
+    author: "Thomas Xue",
+    age: 44,
+    quote:
+      "Testimonials are short quotes from people who love your brand. It's a great way to convince customers to try your services. ",
+  },
+];
+---
+<section class="py-12">
+  <h1 class="yellowText text-5xl italic uppercase text-center">Before and After</h1>
+  <div class="grid grid-cols-1 md:grid-cols-3">
+    {
+      testimonials.map((profile)=>(
+        <div class="m-4">
+          <img src={'/images/'+profile.profileURL} alt="Testimonial" class="object-cover w-full h-48"/>
+          <div class="yellowBG p-8">
+            <p class="pb-4 font-bold">
+              {profile.quote}
+              </p>
+              <small>{profile.author},{profile.age}</small>
+            </div>
+          </div>
+
+      ))
+    }
+  </div>
+</section>
