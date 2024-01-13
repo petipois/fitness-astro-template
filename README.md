@@ -1,8 +1,10 @@
 # Fitness Astro Template
 
+[Youtube Tutorial - Canva to Astro 4.0: Fitness Website](https://youtube.com/playlist?list=PLP5oBhNCHQF1VsRCSTpug63AYymmEvYpM&si=Y4A9d0PsXsRi-FlQ)
+
 ## 🚀 Project Structure
 
-Inside of your Astro project, you'll see the following folders and files:
+Inside of this Fitness Astro Template, you'll see the following folders and files:
 
 ```text
 /
@@ -10,7 +12,13 @@ Inside of your Astro project, you'll see the following folders and files:
 │   └── favicon.svg
 ├── src/
 │   ├── components/
-│   │   └── Card.astro
+│   │   └── About.astro
+|   |   └── Card.astro -- not used
+|   |   └── Hero.astro
+|   |   └── HeroFooter.astro
+|   |   └── ImageCard.astro
+|   |   └── Offers.astro
+|   |   └── Testimonials.astro
 │   ├── layouts/
 │   │   └── Layout.astro
 │   └── pages/
