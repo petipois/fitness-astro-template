@@ -2,6 +2,8 @@
 
 [Youtube Tutorial - Canva to Astro 4.0: Fitness Website](https://youtube.com/playlist?list=PLP5oBhNCHQF1VsRCSTpug63AYymmEvYpM&si=Y4A9d0PsXsRi-FlQ)
 
+[Live Preview](https://fitness-astro-template.netlify.app/)
+
 ## 🚀 Project Structure
 
 Inside of this Fitness Astro Template, you'll see the following folders and files:
