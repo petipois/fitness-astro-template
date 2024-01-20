@@ -1,4 +1,6 @@
 ---
+import { Image } from 'astro:assets';
+
 interface Props {
   linkText: string;
   imageOne:string;
@@ -19,8 +21,13 @@ const { linkText, imageOne, imageTwo } = Astro.props;
       </p>
     </div>
     <div class="grid grid-cols-2">
-        <img src={'/images/'+imageOne} alt="Gym Instructor" class="rounded-md object-cover w-48"/>
-        <img src={'/images/'+imageTwo} alt="Boxing Instructor" class="rounded-md object-cover w-48 pt-8"/>
+        <Image src={'/images/'+imageOne} 
+        width={600} 
+        height={600/1.5} 
+        alt="Gym Instructor" 
+        class="rounded-md object-cover w-48"/>
+        <Image src={'/images/'+imageTwo}
+         width={600} height={600/1.5} alt="Boxing Instructor" class="rounded-md object-cover w-48 pt-8"/>
     </div>
   </div>
 </section>
